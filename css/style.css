@@ -408,19 +408,11 @@ nav a.active::after {
     line-height: 1.4;
 }
 
-/* Contact Social Grid - Big Icons with Modern Polish */
-.social-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 2.5rem;
-}
-
-/* Contact Social Grid - Restored Original Layout */
 .social-grid {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    align-items: flex-start;
+    gap: 2rem;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
@@ -432,19 +424,16 @@ nav a.active::after {
     gap: 0.8rem;
     text-decoration: none;
     color: var(--text-main);
+    flex: 0 0 auto;
 }
 
 .social-card img {
-    width: 240px;
-    height: 240px;
-    object-fit: cover; /* Changed from contain to cover so image fills rounded boundary completely */
-    border-radius: 20px; /* Applies rounded corners to all images */
-    overflow: hidden; /* Forces child content/backgrounds to trim inside the radius */
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    overflow: hidden;
     transition: transform 0.2s ease;
-}
-
-.social-card img:hover {
-    transform: scale(1.05);
 }
 
 .social-card img:hover {
@@ -453,7 +442,7 @@ nav a.active::after {
 
 .social-card span {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--text-main);
 }
 
