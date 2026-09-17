@@ -425,11 +425,21 @@ nav a.active::after {
     text-decoration: none;
     color: var(--text-main);
     flex: 0 0 auto;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    transition: transform 0.2s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-2px);
 }
 
 .social-card img {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     border-radius: 20px;
     overflow: hidden;
@@ -441,8 +451,8 @@ nav a.active::after {
 }
 
 .social-card span {
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
     color: var(--text-main);
 }
 
