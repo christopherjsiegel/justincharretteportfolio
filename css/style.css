@@ -466,6 +466,13 @@ footer {
     font-size: 0.9rem;
 }
 
+footer a,
+footer a:visited,
+footer a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 /* Responsiveness */
 @media (max-width: 868px) {
     .container {
